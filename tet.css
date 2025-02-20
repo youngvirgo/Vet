@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.header{
+    width: 100vw;height: 70px;
+    display: flex;position: relative;
+
+}
+.logoContainer{
+    width: 100px;height: 100%;
+    margin-left: 25px;
+}
+.nav_container{
+    width: 600px;height: 100%;position: absolute;left: 570px;
+    padding-top: 30px;
+}
+.nav_container ul{
+    display: flex;justify-content: space-evenly;list-style: none;
+}
+.nav_container ul li{
+    display: inline;
+}
+.navlist a{
+    text-decoration: none;font-size: 23px;color: rgb(71, 68, 68);
+}
+.navlist a:hover{
+    color: red;
+}
+.navlist a:active{
+    color: red;
+}
+.vertline{
+    width: 3px;height: 50px;background-color: rgb(224, 224, 224);
+    position: absolute;left: 1160px;top: 17px;
+}
+.cartContainer{
+    width: 150px;height: 100%;
+    justify-self: end;position: absolute;left: 1200px;
+    display: flex;gap: 10px;padding-top: 30px;
+}
+.cartContainer p{
+    font-size: 23px;color: rgb(71, 68, 68);
+    cursor: pointer;
+}
+.cartContainer p:hover{
+    color: red;
+}
+
+.landsectionOne{
+    max-width:100vw;min-height: auto;
+}
+.landsectionOneA{
+    width: 100vw;height: 58vh;
+    display: grid;grid-template-columns: 55% 45%;
+}
+.landsectionOneAimg img{
+    width: 100%;height: 92%;
+}
+.landsectionOneAtext{
+    display: flex;flex-direction: column;
+    justify-content: center;
+    gap: 15px;position: relative;
+}
+.landsectionOneAtextOne{
+    position: absolute;top:70px;left: 60px;
+    font-size: 22px;color: rgb(240, 67, 67);
+}
+.landsectionOneAtextTwo{
+    position: absolute;top:110px;left: 60px;
+    font-size: 79px;color:black;
+}
+.landsectionOneAtextThree{
+    position: absolute;top:180px;left: 60px;
+    font-size: 79px;color: black;
+}
+.landsubmitbtn{
+    width: 200px;height: 50px;background-color:  rgb(238, 101, 101) ;
+    position: absolute;top:290px;left: 60px;cursor: pointer;
+    border-radius: 25px;border: 0;font-size: 19px;color: white;
+}
+.landsubmitbtn:hover{
+    background-color: rgb(238, 30, 30) ;
+}
+.landsectionOneB{
+    width: 100%;height: 110vh;
+    display: flex;flex-direction: column;padding-top: 0px;
+}
+.landsectionOneBtextcon{
+    width: 100%;height: 120px;
+    display: flex;flex-direction: column;
+    justify-content: center;align-items: center;
+    gap: 20px;
+}
+.landsectionOneBtextconOne{
+    font-size: 22px;color: rgb(240, 67, 67);
+}
+.landsectionOneBtextconTwo{
+    font-size: 39px;color: black;
+}
+.landsectionOneBproductcon{
+    width: 100%;height: 90vh;display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: auto;row-gap: 10px;column-gap: 10px;
+}
+.popularproducts{
+    width: 100%;height: 80%;
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    padding: 20px;
+}
+.popularproducts:hover{
+    box-shadow: 0 2px 2px 2px rgb(219, 217, 217);
+    transform: scale(1.05);
+}
+.popularproducts .img{
+    width: 100%;height: 60%;
+}
+.popularproducts .name{
+    justify-self: center;align-self: center;
+    margin-top: 40px;font-size: 18px;color: rgb(240, 67, 67);
+}
+.popularproducts .price{
+    justify-self: center;align-self: center;
+    margin-top: 10px;font-size: 18px;color: black;
+}
+.landsectionOneC{
+    width: 100%;height: 45vh;
+  
+    display: grid;grid-template-columns: 1fr 1fr;
+}
+.landsectionOneCOne{
+    width: 100%;height: 100%;
+    display: grid;grid-template-columns: 45% 55%;
+}
+.landsectionOneCOne img{
+    width: 100%;height: 80%;
+}
+.landsectionOneCOnetext{
+    display: flex;flex-direction: column;
+    justify-content: center;position: relative;
+}
+.landsectionOneCOnetext .pone{
+    position: absolute;top:70px;
+    font-size: 22px;color: rgb(240, 67, 67);
+}
+.landsectionOneCOnetext .p2{
+    position: absolute;top:110px;
+    font-size: 32px;color:black;font-weight: 600;
+}
+.landsectionOneCOnedogsubbtn{
+    width: 200px;height: 50px;background-color:  rgb(238, 101, 101) ;
+    position: absolute;top:210px;cursor: pointer;
+    border-radius: 25px;border: 0;font-size: 19px;color: white;
+}
+.landsectionOneCOnedogsubbtn:hover{
+    background-color: rgb(238, 30, 30) ;
+}
+footer{
+    width: 100%;height: 60vh;
+}
+.landfooterone{
+    width: 100%;height: 52vh;
+    display: flex;flex-direction: row;
+}
+.landfooterone1{
+    width: 25%;height: 100%;
+    display: flex;flex-direction: column;
+    justify-content: center;align-items: center;
+    gap: 15px;
+}
+.landfooterone2{
+    width: 20%;height: 100%;
+    display: flex;flex-direction: column;
+    justify-content: center;align-items: center;
+    gap: 15px;padding-top: 30px;
+}
+.landfooterone2atags{
+    display: flex;flex-direction: column;
+    gap: 10px;margin-left: 15px;
+}
+.landfooterone2atags a{
+    color: rgb(240, 67, 67);font-size: 17px;
+}
+.landfooterone2atags a:hover{
+    color: black;
+}
+.landfooterone3{
+    width: 20%;height: 100%;
+    display: flex;flex-direction: column;
+    justify-content: center;align-items: center;
+    gap: 15px;padding-bottom: 20px;
+}
+.landfooterone3 .landfooterone2atags{
+    margin-right: 120px;
+}
+.landfooterone4{
+    width: 35%;height: 100%;
+    display: flex;flex-direction: column;
+    justify-content: center;align-items: center;
+    gap: 15px;padding-top: 53px;
+}
+.landfooterone4 form{
+    display: flex;flex-direction: column;
+    gap: 7px;margin: 20px 0 0 0;
+}
+.newsemail{
+    width: 320px;height: 40px;padding-left: 5px;
+}
+.newssubmit{
+    width: 100px;height: 40px;border: 1px solid  rgb(240, 67, 67);
+    border-radius: 25px;font-size: 17px;cursor: pointer;
+}
+.newssubmit:hover{
+    border: 1px solid black;
+}
+hr{
+    width: 85%;
+    justify-self: center;
+}
+.landfootertwo{
+    display: flex;
+    justify-content: center;align-items: center;padding-top: 15px;
+}

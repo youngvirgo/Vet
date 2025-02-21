@@ -2,6 +2,7 @@
     width: 100%;height: 20vh;
     padding-top: 30px;
 }
+
 .headtext1{
     justify-self: center;
     font-size: 29px;color: rgb(240, 67, 67);
@@ -16,4 +17,84 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-template-rows: auto;row-gap: 10px;column-gap: 10px;
 }
+.cart{
+    height: 65vh;
+    position: fixed;
+    top: 15%;
+    left:100%;
+    width: 400px;
+    min-height: 70vh;
+    background-color: white;
+    transition: 0.5s;
+    
+    
+}
+.cart h2{
+    font-weight: 400;
+    color: rgb(41, 39, 39);
+    text-align: center;
+    position: relative;
+    bottom: 1px;
+}
+.cart i{
+    color: rgb(59, 59, 59);
+    position: relative;
+    bottom: 22px;
+    left: 15px;
+    cursor: pointer;
+}
+.checkout{
+    width: 100%;
+    height: 50px;
+    background-color:rgb(240, 67, 67);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+.checkout:hover{
+    background-color:rgb(238, 30, 30) ;
+}
+.active .cart{
+    left: calc(100% - 400px);
+}
+.productlist{
+    height: 51vh;
+    padding: 5px 15px 15px 15px;
+    overflow: auto;
+    
+    
+}
+.productlist li{
+    height: 35px;
+    display: grid;
+    grid-template-columns: 70px repeat(3,1fr);
+    row-gap: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid;
+}
+.productlist li img{
+    width: 50px; height: 30px;
+    background-color: white;
+}
+.productlist li div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    bottom: 3px;
+}
 
+.productlist li button{
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+}

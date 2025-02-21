@@ -11,7 +11,7 @@
 <body>
     <header class="header">
         <div class="logoContainer">
-            <img src="" alt="logoimg">
+            <img src="./assets/DA.png" alt="logoimg">
         </div>
         <nav class="nav_container">
             <ul class="navlist">
@@ -22,11 +22,23 @@
             </ul>
         </nav>
         <div class="vertline"></div>
-        <div class="cartContainer">
+        <div class="favcartContainer">
             <p>Cart</p>
             <i class="fa-solid fa-cart-shopping" style="position: relative;top: 5px;color: rgb(71, 68, 68);cursor: pointer;"></i>
+            <p class="cartnumcon"></p>
         </div>
+        <div class="cart">
+            <h2>Your Basket</h2>
+            <i class="fa-solid fa-x fa-xl closecart"></i>
+            <ul class="productlist"></ul>
+            <div onclick="Checkout()" class="checkout">
+                <div class="total">
+                    <span>Checkout (0 items)</span>$
+                </div>
+            </div>
+          </div>
     </header>
+    
 
     <main class="landsectionOne">
         <div class="products_headtext">
@@ -40,8 +52,8 @@
         <div class="landfooterone">
             <div class="landfooterone1">
                 <p style="font-size: 25px;">Happy pet - pet store</p>
-                <p>12 Pike St, New York, NY 10002</p>
-                <p style="margin-right: 76px;">demo@webnode.com</p>
+                <p>ifesowapo street, Ajibode, Ibadan.</p>
+                <p>egwuatuemmanuel56@gmail.com</p>
                 <p style="margin-right: 126px;">08126577121</p>
             </div>
             <div class="landfooterone2">
@@ -77,7 +89,9 @@
         </div>
     </footer>
 
+    
     <script src="popularproducts.js"></script>
     <script src="products.js"></script>
+    
 </body>
 </html>

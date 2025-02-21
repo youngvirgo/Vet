@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tet Home</title>
     <link rel="stylesheet" href="tet.css">
+    <link rel="stylesheet" href="products.css">
     <script src="https://kit.fontawesome.com/bf48add739.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
         <div class="logoContainer">
-            <img src="" alt="logoimg">
+            <img src="./assets/DA.png" alt="logoimg">
         </div>
         <nav class="nav_container">
             <ul class="navlist">
@@ -21,10 +22,31 @@
             </ul>
         </nav>
         <div class="vertline"></div>
-        <div class="cartContainer">
+        <div class="favcartContainer">
             <p>Cart</p>
             <i class="fa-solid fa-cart-shopping" style="position: relative;top: 5px;color: rgb(71, 68, 68);cursor: pointer;"></i>
+            <p class="cartnumcon"></p>
         </div>
+        <div class="cart">
+            <h2>Your Basket</h2>
+            <i class="fa-solid fa-x fa-xl closecart"></i>
+            <ul class="productlist"></ul>
+            <div onclick="Checkout()" class="checkout">
+                <div class="total">
+                    <span>Checkout (0 items)</span>$
+                </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <i class="fa-solid fa-bars bars" style="cursor: pointer;"></i>
+            <div class="dropdowncontent">
+                <i class="fa-solid fa-x close" style="cursor: pointer;"></i>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+          </div>
     </header>
 
     <main class="landsectionOne">
@@ -70,13 +92,13 @@
     <footer>
         <div class="landfooterone">
             <div class="landfooterone1">
-                <p style="font-size: 25px;">Happy pet - pet store</p>
-                <p>12 Pike St, New York, NY 10002</p>
-                <p style="margin-right: 76px;">demo@webnode.com</p>
-                <p style="margin-right: 126px;">08126577121</p>
+                <p class="footp1">Happy pet - pet store</p>
+                <p class="footp2">ifesowapo street, Ajibode, Ibadan.</p>
+                <p class="footp2">egwuatuemmanuel56@gmail.com</p>
+                <p class="footp3">08126577121</p>
             </div>
             <div class="landfooterone2">
-                <p style="font-size: 25px;">Information</p>
+                <p class="footp1">Information</p>
                 <div class="landfooterone2atags">
                     <a href="">About Us</a>
                     <a href="">Contact Us</a>
@@ -86,7 +108,7 @@
                 
             </div>
             <div class="landfooterone3">
-                <p style="font-size: 25px;">Products Categories</p>
+                <p class="footp1">Products Categories</p>
                 <div class="landfooterone2atags">
                     <a href="">Dog Products</a>
                     <a href="">Cat Products</a>
@@ -94,7 +116,7 @@
                 </div>
             </div>
             <div class="landfooterone4">
-                <p style="font-size: 30px;">Subscribe to our newsletter</p>
+                <p class="footp4">Subscribe to our newsletter</p>
                 <form>
                     <label>Email</label>
                     <input type="email" placeholder="@" class="newsemail">

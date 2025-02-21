@@ -1,9 +1,13 @@
+.contact_headtext{
+    width: 100%;height: 20vh;
+}
+
 .conheadtextone{
     justify-self: center;
     font-size: 25px;color: rgb(240, 67, 67);
 }
 .conheadtexttwo{
-    justify-self: center;
+    justify-self: center;margin-bottom: 20px;
     font-size: 65px;color: black;
 }
 .contactus{

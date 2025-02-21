@@ -30,9 +30,9 @@ const popularProducts = [
         price : "23"
     },
     {
-        id : 6,
-        Name : "burger",
-        Image : "../assets/burger.jpeg",
+        id : 3,
+        Name : "ball",
+        Image : "../assets/ball.jpeg",
         price : "23"
     },
     {
@@ -48,9 +48,9 @@ const popularProducts = [
         price : "23"
     },
     {
-        id : 9,
-        Name : "burger",
-        Image : "../assets/burger.jpeg",
+        id : 7,
+        Name : "Chew Rope",
+        Image : "../assets/chew.jpeg",
         price : "23"
     },
     {

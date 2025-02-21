@@ -13,7 +13,11 @@ body{
 }
 .logoContainer{
     width: 100px;height: 100%;
-    margin-left: 25px;
+    margin-left: 25px;padding-top: 10px;
+}
+.logoContainer img{
+    width: 60px;height: 80%;
+    
 }
 .nav_container{
     width: 600px;height: 100%;position: absolute;left: 570px;
@@ -38,16 +42,16 @@ body{
     width: 3px;height: 50px;background-color: rgb(224, 224, 224);
     position: absolute;left: 1160px;top: 17px;
 }
-.cartContainer{
+.favcartContainer{
     width: 150px;height: 100%;
     justify-self: end;position: absolute;left: 1200px;
     display: flex;gap: 10px;padding-top: 30px;
 }
-.cartContainer p{
+.favcartContainer p{
     font-size: 23px;color: rgb(71, 68, 68);
     cursor: pointer;
 }
-.cartContainer p:hover{
+.favcartContainer p:hover{
     color: red;
 }
 
@@ -123,14 +127,22 @@ body{
 }
 .popularproducts .name{
     justify-self: center;align-self: center;
-    margin-top: 40px;font-size: 18px;color: rgb(240, 67, 67);
+    margin-top: 20px;font-size: 18px;color: rgb(240, 67, 67);
 }
 .popularproducts .price{
     justify-self: center;align-self: center;
     margin-top: 10px;font-size: 18px;color: black;
 }
+.popularproducts button{
+    width: 70%;height: 50px;margin-left: 30px;background-color: rgb(245, 96, 96) ;
+    border-radius: 25px;border: 0;cursor: pointer;
+}
+.popularproducts button:hover{
+    background-color:rgb(238, 30, 30) ;
+}
 .landsectionOneC{
-    width: 100%;height: 45vh;
+    width: 100%;height: 55vh;
+    padding-top: 40px;
   
     display: grid;grid-template-columns: 1fr 1fr;
 }
@@ -226,4 +238,313 @@ hr{
 .landfootertwo{
     display: flex;
     justify-content: center;align-items: center;padding-top: 15px;
+}
+.footp1{
+    font-size: 25px;
+}
+.footp3{
+    margin-right: 126px;
+}
+.footp4{
+    font-size: 30px;
+}
+.dropdown{
+    position: relative;left: 85%;top: 35px;display: none;
+}
+.dropdowncontent{
+    width: 500px;height: 520px;
+    background-color: rgb(238, 62, 62);display: none;
+    position: fixed;right: 0px;
+    padding: 20px 0 0 20px;z-index: 1;
+}
+.dropdowncontent a{
+    text-decoration: none;font-size: 22px;color: black;display: block;margin-top: 20px;
+}
+.dropdowncontent a:hover{
+    color: white;
+}
+@media (max-width:1024px) {
+    .nav_container{
+        display: none;
+    }
+    .vertline{
+        display: none;
+    }
+    .favcartContainer{
+        position: relative;
+        left: 80%;
+    }
+    .dropdown{
+        display: block;
+        position: relative;
+        left: 92%;
+    }
+    .landsectionOneAtextTwo{
+        font-size: 59px;
+    }
+    .landsectionOneAtextThree{
+        font-size: 59px;
+    }
+    .landsectionOneC{
+        position: relative;
+        top: 330px;
+    }
+    footer{
+        position: relative;
+        top: 250px;
+    }
+    .landfooterone2{
+        width: 15%;
+        padding-top: 50px;
+    }
+    .landsectionOneCOnetext .p2{
+        font-size: 25px;
+    }
+    .landfooterone3{
+        width: 25%;padding-bottom: 25px;
+    }
+}
+@media (max-width:889px) {
+    .nav_container{
+        display: none;
+    }
+    .vertline{
+        display: none;
+    }
+    .favcartContainer{
+        position: relative;
+        left: 70%;
+    }
+    .dropdown{
+        display: block;
+        position: relative;
+        left: 62%;
+    }
+    .landsectionOneAtextTwo{
+        font-size: 45px;
+    }
+    .landsectionOneAtextThree{
+        font-size: 45px;
+    }
+    .landsectionOneB{
+        position: relative;top: 25px;
+    }
+    .landsectionOneC{
+        position: relative;
+        top: 430px;
+    }
+    .landsectionOneCOnetext{
+        bottom: 40px;
+    }
+    footer{
+        position: relative;
+        top: 380px;
+    }
+    .landfooterone2{
+        width: 15%;
+        padding-top: 50px;
+    }
+    .footp1{
+        font-size: 18px;
+    }
+    .footp2{
+        font-size: 13px;
+    }
+    .footp3{
+        font-size: 13px;
+        margin-right: 100px;
+    }
+    .footp4{
+        font-size: 21px;
+    }
+    .landfooterone2atags a{
+        font-size: 14px;
+    }
+    .landsectionOneCOnetext .p2{
+        font-size: 20px;
+    }
+    .landsectionOneCOnedogsubbtn{
+        width: 170px;height: 50px;background-color:  rgb(238, 101, 101) ;
+        position: absolute;top:170px;cursor: pointer;
+        border-radius: 25px;border: 0;font-size: 19px;color: white;
+    }
+    .landfooterone3{
+        width: 25%;padding-bottom: 23px;
+    }
+    .newsemail{
+        width: 240px;height: 40px;padding-left: 5px;
+    }
+}
+@media (max-width:829px) {
+    .nav_container{
+        display: none;
+    }
+    .vertline{
+        display: none;
+    }
+    .favcartContainer{
+        position: relative;
+        left: 70%;
+    }
+    .dropdown{
+        display: block;
+        position: relative;
+        left: 62%;
+    }
+    .landsectionOneAtextTwo{
+        font-size: 45px;
+    }
+    .landsectionOneAtextThree{
+        font-size: 45px;
+    }
+    .landsectionOneB{
+        position: relative;top: 25px;
+    }
+    .landsectionOneC{
+        position: relative;
+        top: 1030px;
+    }
+    .landsectionOneCOnetext{
+        bottom: 40px;
+    }
+    footer{
+        position: relative;
+        top: 950px;
+    }
+    .landfooterone2{
+        width: 15%;
+        padding-top: 50px;
+    }
+    .footp1{
+        font-size: 18px;
+    }
+    .footp2{
+        font-size: 13px;
+    }
+    .footp3{
+        font-size: 13px;
+        margin-right: 100px;
+    }
+    .footp4{
+        font-size: 21px;
+    }
+    .landfooterone2atags a{
+        font-size: 14px;
+    }
+    .landsectionOneCOnetext .p2{
+        font-size: 20px;
+    }
+    .landsectionOneCOnedogsubbtn{
+        width: 170px;height: 50px;background-color:  rgb(238, 101, 101) ;
+        position: absolute;top:170px;cursor: pointer;
+        border-radius: 25px;border: 0;font-size: 19px;color: white;
+    }
+    .landfooterone3{
+        width: 25%;padding-bottom: 23px;
+    }
+    .newsemail{
+        width: 240px;height: 40px;padding-left: 5px;
+    }
+}
+@media (max-width:700px) {
+    .nav_container{
+        display: none;
+    }
+    .vertline{
+        display: none;
+    }
+    .favcartContainer{
+        position: relative;
+        left: 60%;
+    }
+    .dropdown{
+        display: block;
+        position: relative;
+        left: 52%;
+    }
+    .landsectionOneA{
+        width: 100vw;height: 128vh;
+        display: flex;flex-direction: column;
+    }
+    .landsectionOneAtext{
+        width: 100%;height: 40%;
+        display: flex;justify-content: center;align-items: center;
+    }
+    .landsectionOneAimg{
+        width: 100%;height: 60%;
+    }
+    .landsubmitbtn{
+        top: 240px;
+    }
+    .landfooterone{
+        width: 100%;height: 152vh;
+        display: flex;flex-direction: column;
+    }
+    .landfooterone1{
+        width: 100%;display: flex;flex-direction: column;
+        justify-content: baseline;align-items: start;
+        padding-left: 20px;
+    }
+    .landfooterone2{
+        width: 100%;display: flex;flex-direction: column;
+        justify-content: baseline;align-items: start;
+        padding-left: 20px;padding-top: 0;
+    }
+    .landfooterone3{
+        width: 100%;display: flex;flex-direction: column;
+        justify-content: baseline;align-items: start;
+        padding-left: 20px;padding-top: 0;
+    }
+    .landfooterone4{
+        width: 100%;display: flex;flex-direction: column;
+        justify-content: baseline;align-items: start;
+        padding-left: 20px;padding-top: 0;
+    }
+    footer{
+        position: relative;
+        top: 1750px;
+    }
+    .footp1{
+        font-size: 27px;
+    }
+    .footp2{
+        font-size: 20px;
+    }
+    .footp3{
+        font-size: 20px;
+        margin-right: 100px;
+    }
+    .footp4{
+        font-size: 27px;
+    }
+    .landfooterone2atags a{
+        font-size: 20px;
+    }
+    .landsectionOneC{
+        width: 100%;height: 125vh;
+      
+        display: flex;flex-direction: column;
+    }
+    .landsectionOneCOne{
+        width: 100%;height: 100%;
+        display: flex;flex-direction: column;
+    }
+    .landsectionOneCOnetext .p2{
+        font-size: 25px;
+    }
+    .landsectionOneCOnedogsubbtn{
+        width: 220px;height: 50px;background-color:  rgb(238, 101, 101) ;
+        position: absolute;top:170px;cursor: pointer;
+        border-radius: 25px;border: 0;font-size: 19px;color: white;
+    }
+}
+@media (max-width:620px) {
+    footer{
+        position: relative;
+        top: 2350px;
+    }
+    .landsectionOneC{
+        position: relative;
+        top: 1630px;
+    }
 }
